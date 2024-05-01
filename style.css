@@ -1,0 +1,58 @@
+@import './fonts/fonts.css';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'aspekta';
+  display: flex;
+  background-color: #fffffb;
+  color: #000005;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+h1 {
+  margin-bottom: 56px;
+  font-size: 43px;
+}
+
+.location {
+  margin-top: 24px;
+}
+
+.location p:first-child span {
+  margin-left: 62px;
+}
+
+.location p:nth-of-type(2) span {
+  margin-left: 11px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .location {
+    width: 90dvw;
+  }
+}
