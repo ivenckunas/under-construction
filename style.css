@@ -52,11 +52,11 @@ h3 {
   text-decoration: none;
 }
 
-.location a:first-of-type {
+.ltu a {
   margin-left: 62px;
 }
 
-.location a:nth-of-type(1) {
+.sr a {
   margin-left: 11px;
   margin-bottom: 6px;
 }
