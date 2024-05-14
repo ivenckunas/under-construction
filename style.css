@@ -84,8 +84,4 @@ h3 {
   .location p {
     font-size: 15px;
   }
-
-  .location p:first-child a {
-    margin-left: 59px;
-  }
 }
