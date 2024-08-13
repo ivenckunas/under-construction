@@ -157,11 +157,132 @@ ul {
   }
 }
 
-@media (max-width: 1024px) {
-  body {
-    margin: 0 auto;
-    text-align: center;
-    margin: 0 auto;
-    text-align: left;
+@media (max-width: 1439px) {
+  ul {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1270px) {
+  .main__hr {
+    display: none;
+  }
+
+  .header__hr {
+    top: 72px;
+  }
+
+  .lines {
+    grid-area: lines;
+  }
+
+  .contacts {
+    grid-area: contacts;
+  }
+
+  header {
+    img {
+      height: 40px;
+      padding: 16px;
+    }
+  }
+
+  main {
+    padding: 24px 16px;
+    padding-bottom: 16px;
+    display: grid;
+    grid-template-areas:
+      'title title'
+      'lines contacts';
+
+    img {
+      margin-right: 0;
+    }
+
+    .title {
+      grid-area: title;
+      padding-left: 0;
+      width: auto;
+
+      h1 {
+        font-size: 42px;
+        line-height: 40px;
+        font-weight: 700;
+        letter-spacing: -2px;
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-size: 14px;
+        letter-spacing: -0.5px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        padding-right: 16px;
+
+        span {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    .lines {
+      height: 174px;
+    }
+
+    .contacts {
+      padding-right: 0;
+      width: fit-content;
+
+      h2 {
+        font-size: 20px;
+        letter-spacing: -1px;
+        margin-bottom: 0px;
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+
+      h4 {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .ltu {
+        margin-bottom: 8px;
+      }
+
+      .ltu,
+      .slo {
+        font-size: 14px;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      border-left: none;
+      margin-left: 16px;
+      padding-left: 0;
+      padding-top: 0;
+      height: 54px;
+      border-top: 2px solid var(--grey);
+      width: 90%;
+
+      p {
+        font-size: 20px;
+        line-height: 19px;
+        letter-spacing: -1px;
+        max-width: 50%;
+      }
+    }
   }
 }
