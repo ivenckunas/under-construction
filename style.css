@@ -121,6 +121,10 @@ main {
       font-weight: 400;
     }
 
+    .logo {
+      margin-bottom: 24px;
+    }
+
     .ltu {
       margin-bottom: 8px;
     }
@@ -172,12 +176,17 @@ ul {
     top: 72px;
   }
 
-  .lines {
-    grid-area: lines;
-  }
+
 
   .contacts {
-    grid-area: contacts;
+    display: flex;
+    margin: 0 auto;
+    gap: 32px;
+
+
+    .logo {
+      max-height: 116px;
+    }
   }
 
   header {
@@ -190,10 +199,11 @@ ul {
   main {
     padding: 24px 16px;
     padding-bottom: 16px;
+    padding-top: 18px;
     display: grid;
     grid-template-areas:
-      'title title'
-      'lines contacts';
+      'title'
+      'contacts';
 
     img {
       margin-right: 0;
@@ -223,10 +233,6 @@ ul {
           margin-bottom: 16px;
         }
       }
-    }
-
-    .lines {
-      height: 174px;
     }
 
     .contacts {
